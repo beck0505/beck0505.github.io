@@ -60,8 +60,218 @@ var activities = [
 	{name:"黑翼之巢", good:"一趟T2全都拿.",bad:"怀揣10万金, 一件都不出."},
 ];
 
+var mc_drops = [
+	{
+		boss:"鲁西弗隆",
+		num_drops: 3, 
+		items:[
+			{name: '<div><a class="q4" href="">力量护手</a></div>'},
+			{name: '<div><a class="q4" href="">恶魔之心手套</a></div>'},
+			{name: '<div><a class="q4" href="">启示项链</a></div>'},
+			{name: '<div><a class="q4" href="">塞纳里奥长靴</a></div>'},
+			{name: '<div><a class="q4" href="">奥术师便鞋</a></div>'},
+			{name: '<div><a class="q4" href="">秩序之源战靴/大力之怒长靴</a></div>'},
+			{name: '<div><a class="q4" href="">召火腿甲</a></div>'},
+			{name: '<div><a class="q4" href="">沉重的黑铁戒指</a></div>'},
+			{name: '<div><a class="q4" href="">法力风暴护腿</a></div>'},
+			{name: '<div><a class="q4" href="">法术能量之戒</a></div>'},
+			{name: '<div><a class="q4" href="">波动长袍</a></div>'}
+	]},
+	{
+		boss:"玛格曼达",
+		num_drops: 3,
+		items:[
+			{name: '<div><a class="q4" href="">震地者</a></div>'},
+			{name: '<div><a class="q4" href="">速射强弓</a></div>'},
+			{name: '<div><a class="q4" href="">预言短裤</a></div>'},
+			{name: '<div><a class="q4" href="">塞纳里奥护腿</a></div>'},
+			{name: '<div><a class="q4" href="">恶魔之心短裤</a></div>'},
+			{name: '<div><a class="q4" href="">稳固之力勋章</a></div>'},
+			{name: '<div><a class="q4" href="">奥术师护腿</a></div>'},
+			{name: '<div><a class="q4" href="">力量腿铠</a></div>'},
+			{name: '<div><a class="q4" href="">夜幕杀手短裤</a></div>'},
+			{name: '<div><a class="q4" href="">巨人追猎者护腿</a></div>'},
+			{name: '<div><a class="q4" href="">艾斯卡达尔的右爪</a></div>'},
+			{name: '<div><a class="q4" href="">秩序之源腿铠/大地之怒腿甲</a></div>'},
+			{name: '<div><a class="q4" href="">火焰符文魔典</a></div>'},
+			{name: '<div><a class="q4" href="">迅击戒指</a></div>'},
+			{name: '<div><a class="q4" href="">黑曜石之刃</a></div>'},
+			{name: '<div><a class="q4" href="">古代熔火皮手套</a></div>'},
+			{name: '<div><a class="q4" href="">烈焰守卫护手</a></div>'},
+			{name: '<div><a class="q4" href="">燃魔腰带</a></div>'},
+			{name: '<div><a class="q4" href="">短暂能量护符</a></div>'},
+			{name: '<div><a class="q4" href="">岩浆长靴</a></div>'},
+			{name: '<div><a class="q4" href="">召火腿甲</a></div>'},
+			{name: '<div><a class="q4" href="">地核护肩</a></div>'},
+			{name: '<div><a class="q4" href="">烈焰行者重靴</a></div>'}
+	]},
+	{
+		boss:"基赫纳斯", 
+		num_drops: 3,
+		items:[
+			{name: '<div><a class="q4" href="">预言手套</a></div>'},
+			{name: '<div><a class="q4" href="">夜幕杀手手套</a></div>'},
+			{name: '<div><a class="q4" href="">力量马靴</a></div>'},
+			{name: '<div><a class="q4" href="">巨人追猎者长靴</a></div>'},
+			{name: '<div><a class="q4" href="">秩序之源护手/大地之怒护手</a></div>'},
+			{name: '<div><a class="q4" href="">召火腿甲</a></div>'},
+			{name: '<div><a class="q4" href="">巫术匕首</a></div>'},
+			{name: '<div><a class="q4" href="">沉重的黑铁戒指</a></div>'},
+			{name: '<div><a class="q4" href="">法力风暴护腿</a></div>'},
+			{name: '<div><a class="q4" href="">法术能量之戒</a></div>'},
+			{name: '<div><a class="q4" href="">波动长袍</a></div>'},
+			{name: '<div><a class="q4" href="">火蜥蜴鳞片短裤</a></div>'},
+			{name: '<div><a class="q4" href="">稳固护腕</a></div>'},
+			{name: '<div><a class="q4" href="">赤红震荡者</a></div>'}
+	]},
+	{
+		boss:"加尔", 
+		num_drops: 3,
+		items:[
+			{name: '<div><a class="q4" href="">光环石锤</a></div>'},
+			{name: '<div><a class="q4" href="">残忍利刃</a></div>'},
+			{name: '<div><a class="q4" href="">血腥撕裂者</a></div>'},
+			{name: '<div><a class="q4" href="">钻孔虫之碟</a></div>'},
+			{name: '<div><a class="q4" href="">塞纳里奥头盔</a></div>'},
+			{name: '<div><a class="q4" href="">夜幕杀手头巾</a></div>'},
+			{name: '<div><a class="q4" href="">奥术师头冠</a></div>'},
+			{name: '<div><a class="q4" href="">巨人追猎者头盔</a></div>'},
+			{name: '<div><a class="q4" href="">力量头盔</a></div>'},
+			{name: '<div><a class="q4" href="">恶魔之心角饰</a></div>'},
+			{name: '<div><a class="q4" href="">预言头饰</a></div>'},
+			{name: '<div><a class="q4" href="">秩序之源头盔/大地之怒头盔</a></div>'},
+			{name: '<div><a class="q4" href="">古代熔火皮手套</a></div>'},
+			{name: '<div><a class="q4" href="">火焰符文魔典</a></div>'},
+			{name: '<div><a class="q4" href="">燃魔腰带</a></div>'},
+			{name: '<div><a class="q4" href="">短暂能量护符</a></div>'},
+			{name: '<div><a class="q4" href="">迅击戒指</a></div>'},
+			{name: '<div><a class="q4" href="">黑曜石之刃</a></div>'},
+			{name: '<div><a class="q4" href="">烈焰守卫护手</a></div>'},
+			{name: '<div><a class="q4" href="">逐风者禁锢之颅</a></div>'},
+			{name: '<div><a class="q4" href="">地核护肩</a></div>'},
+			{name: '<div><a class="q4" href="">岩浆长靴</a></div>'},
+			{name: '<div><a class="q4" href="">召火腿甲</a></div>'}
+	]},
+	{
+		boss:"迦顿男爵", 
+		num_drops: 10,
+		items:[
+			{name: '<div><a class="q4" href="">奥术师衬肩</a></div>'},
+			{name: '<div><a class="q4" href="">魔法导师的封印</a></div>'},
+			{name: '<div><a class="q4" href="">塞纳里奥肩甲</a></div>'},
+			{name: '<div><a class="q4" href="">恶魔之心护肩</a></div>'},
+			{name: '<div><a class="q4" href="">秩序之源肩铠/大地之怒肩饰</a></div>'},
+			{name: '<div><a class="q4" href="">古代熔火皮手套</a></div>'},
+			{name: '<div><a class="q4" href="">火焰符文魔典</a></div>'},
+			{name: '<div><a class="q4" href=""><div><a class="q5" href="https://cn.classic.wowhead.com/item=18563">逐风者禁锢之颅</a></div>'},
+			{name: '<div><a class="q4" href="">燃魔腰带</a></div>'},
+			{name: '<div><a class="q4" href="">短暂能量护符</a></div>'},
+			{name: '<div><a class="q4" href="">迅击戒指</a></div>'},
+			{name: '<div><a class="q4" href="">黑曜石之刃</a></div>'},
+			{name: '<div><a class="q4" href="">烈焰守卫护手</a></div>'},
+			{name: '<div><a class="q4" href="">召火腿甲</a></div>'},
+			{name: '<div><a class="q4" href="">岩浆长靴</a></div>'}
+	]},
+	{
+		boss:"沙斯拉尔", 
+		num_drops: 3,
+		items:[
+			{name: '<div><a class="q4" href="">塞纳里奥手套</a></div>'},
+			{name: '<div><a class="q4" href="">奥术师手套</a></div>'},
+			{name: '<div><a class="q4" href="">巨人追猎者手套</a></div>'},
+			{name: '<div><a class="q4" href="">恶魔之心便鞋</a></div>'},
+			{name: '<div><a class="q4" href="">预言之靴</a></div>'},
+			{name: '<div><a class="q4" href="">夜幕杀手长靴</a></div>'},
+			{name: '<div><a class="q4" href="">巫术匕首</a></div>'},
+			{name: '<div><a class="q4" href="">法术能量之戒</a></div>'},
+			{name: '<div><a class="q4" href="">波动长袍</a></div>'},
+			{name: '<div><a class="q4" href="">赤红震荡者</a></div>'}
+	]},
+	{
+		boss:"萨弗隆先驱者", 
+		num_drops: 3,
+		items:[
+			{name: '<div><a class="q4" href="">暗影之击</a></div>'},
+			{name: '<div><a class="q4" href="">力量肩铠</a></div>'},
+			{name: '<div><a class="q4" href="">夜幕杀手护肩</a></div>'},
+			{name: '<div><a class="q4" href="">预言衬肩</a></div>'},
+			{name: '<div><a class="q4" href="">巨人追猎者肩饰</a></div>'},
+			{name: '<div><a class="q4" href="">召火腿甲</a></div>'},
+			{name: '<div><a class="q4" href="">巫术匕首</a></div>'},
+			{name: '<div><a class="q4" href="">沉重的黑铁戒指</a></div>'},
+			{name: '<div><a class="q4" href="">法力风暴护腿</a></div>'},
+			{name: '<div><a class="q4" href="">法术能量之戒</a></div>'},
+			{name: '<div><a class="q4" href="">火蜥蜴鳞片短裤</a></div>'},
+			{name: '<div><a class="q4" href="">稳固护腕</a></div>'},
+			{name: '<div><a class="q4" href="">赤红震荡者</a></div>'}
+	]},
+	{
+		boss:"焚化者古雷曼格", 
+		num_drops: 4,
+		items:[
+			{name: '<div><a class="q4" href="">碧空之歌</a></div>'},
+			{name: '<div><a class="q4" href="">奥术师长袍</a></div>'},
+			{name: '<div><a class="q4" href="">统御法杖</a></div>'},
+			{name: '<div><a class="q4" href="">夜幕杀手胸甲</a></div>'},
+			{name: '<div><a class="q4" href="">巨人追猎者胸甲</a></div>'},
+			{name: '<div><a class="q4" href="">预言法袍</a></div>'},
+			{name: '<div><a class="q4" href="">恶魔之心长袍</a></div>'},
+			{name: '<div><a class="q4" href="">爆击猎枪</a></div>'},
+			{name: '<div><a class="q4" href="">力量胸甲</a></div>'},
+			{name: '<div><a class="q4" href="">塞纳里奥胸甲</a></div>'},
+			{name: '<div><a class="q4" href="">秩序之源胸甲/大地之怒外衣</a></div>'},
+			{name: '<div><a class="q4" href="">古代熔火皮手套</a></div>'},
+			{name: '<div><a class="q4" href="">火焰符文魔典</a></div>'},
+			{name: '<div><a class="q4" href="">烈焰守卫护手</a></div>'},
+			{name: '<div><a class="q4" href="">燃魔腰带</a></div>'},
+			{name: '<div><a class="q4" href="">短暂能量护符</a></div>'},
+			{name: '<div><a class="q4" href="">迅击戒指</a></div>'},
+			{name: '<div><a class="q4" href="">黑曜石之刃</a></div>'},
+			{name: '<div><a class="q4" href="">召火腿甲</a></div>'}
+	]},
+	{
+		boss:"火焰之王的宝箱", 
+		num_drops:3,
+		items:[
+			{name: '<div><a class="q4" href="https://cn.classic.wowhead.com/item=18805">熔火犬牙</a></div>'},
+			{name: '<div><a class="q4" href="">远古石叶</a></div>'},
+			{name: '<div><a class="q4" href="">狂野肩铠</a></div>'},
+			{name: '<div><a class="q4" href="">真龙护腕</a></div>'},
+			{name: '<div><a class="q4" href="">神圣之眼</a></div>'},
+			{name: '<div><a class="q4" href="">耳语秘言腰带</a></div>'},
+			{name: '<div><a class="q4" href="">防火披风</a></div>'}
+	]},
+	{
+		boss:"拉格纳罗斯", 
+		num_drops: 4,
+		items:[
+			{name: '<div><a class="q4" href="">纯焰精华</a></div>'},
+			{name: '<div><a class="q4" href="">灵风短裤</a></div>'},
+			{name: '<div><a class="q4" href="">毁灭之刃</a></div>'},
+			{name: '<div><a class="q4" href="">复仇护腿</a></div>'},
+			{name: '<div><a class="q4" href="">愤怒腿铠</a></div>'},
+			{name: '<div><a class="q4" href="">萨弗拉斯指环</a></div>'},
+			{name: '<div><a class="q4" href="">卓越护腿</a></div>'},
+			{name: '<div><a class="q4" href="">环雾披风</a></div>'},
+			{name: '<div><a class="q4" href="">龙血斗篷</a></div>'},
+			{name: '<div><a class="q4" href="">冲击束带</a></div>'},
+			{name: '<div><a class="q4" href="">埃古雷亚指环</a></div>'},
+			{name: '<div><a class="q4" href="">玛利斯达尔防御者</a></div>'},
+			{name: '<div><a class="q4" href="">血牙短裤</a></div>'},
+			{name: '<div><a class="q4" href="">审判腿铠/无尽风暴护腿</a></div>'},
+			{name: '<div><a class="q4" href="">巨龙追猎者腿甲</a></div>'},
+			{name: '<div><a class="q4" href="">毁灭王冠</a></div>'},
+			{name: '<div><a class="q4" href="">火焰之王的项圈</a></div>'},
+			{name: '<div><a class="q4" href="">萨弗拉斯之眼</a></div>'},
+			{name: '<div><a class="q4" href="">怒风腿甲</a></div>'},
+			{name: '<div><a class="q4" href="">削骨之刃</a></div>'},
+			{name: '<div><a class="q4" href="">烈焰碎片</a></div>'},
+			{name: '<div><a class="q4" href="">脊骨收割者</a></div>'}
+	]}
+]
+
 var specials = [
-	{date:20140214, type:'bad', name:'待在男（女）友身边', description:'脱团火葬场，入团保平安。'}
+	{date:20210214, type:'bad', name:'待在男（女）友身边', description:'脱团火葬场，入团保平安。'}
 ];
 
 var tools = ["Eclipse写程序", "MSOffice写文档", "记事本写程序", "Windows8", "Linux", "MacOS", "IE", "Android设备", "iOS设备"];
@@ -99,11 +309,18 @@ function pickTodaysLuck() {
 	var numGood = random(iday, 98) % 3 + 1;
 	var numBad = random(iday, 87) % 3 + 1;
 	var eventArr = pickRandomActivity(_activities, numGood + numBad);
+	var mc_bosses_drops = pickRandomItemsFromBosses(mc_drops)
+
 	
 	var specialSize = pickSpecials();
 	
-	for (var i = 0; i < numGood; i++) {
-		addToGood(eventArr[i]);
+	// for (var i = 0; i < numGood; i++) {
+	// 	addToGood(eventArr[i]);
+	// }
+
+	for (let i = 0; i < mc_bosses_drops.length; i++) {
+		const boss_drops = mc_bosses_drops[i];
+		addToDrops(boss_drops)
 	}
 	
 	for (var i = 0; i < numBad; i++) {
@@ -166,6 +383,24 @@ function pickRandomActivity(activities, size) {
 	return picked_events;
 }
 
+
+// 从掉落中随机选取装备
+function pickRandomItemsFromBosses(bosses) {
+	var picked_items = Array()
+	for (var i = 0; i < bosses.length; i ++) {
+		var picked = pickRandomItems(bosses[i])
+		picked_items.push({name: bosses[i].boss, picked})
+	}
+	return picked_items
+}
+
+// 从掉落中随机选取装备
+function pickRandomItems(boss) {
+	var picked_items = pickRandom(boss.items, boss.num_drops)
+	return picked_items
+}
+
+
 // 从数组中随机挑选 size 个
 function pickRandom(array, size) {
 	var result = [];
@@ -208,6 +443,20 @@ function addToGood(event) {
 
 // 添加到“不宜”
 function addToBad(event) {
+	$('.bad .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.bad + '</div></li>');
+}
+
+// 添加到“今日必掉”
+function addToDrops(boss) {
+	$('.good .content ul').append('<li><div id=' + boss.name + ' class="name">' + boss.name + '</div></li>');
+	for (let i = 0; i < boss.picked.length; i++) {
+		const pick = boss.picked[i];
+		$("#"+boss.name).append('<div class="description">' + pick.name + '</div></li>')
+	}
+}
+
+// 添加到“今日不掉”
+function addToNotDrop(event) {
 	$('.bad .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.bad + '</div></li>');
 }
 
@@ -403,6 +652,14 @@ body {
 	color: #999;
 }
 
+.q4 {
+	color: #a335ee!important;
+}
+
+.q5 {
+	color: #ff8000!important;
+}
+
 	</style>
 
 	</head>
@@ -416,7 +673,7 @@ body {
 			<div class="good">
 				<div class="title">
 					<table>
-						<tr><td>宜</td></tr>
+						<tr><td>今日掉落</td></tr>
 					</table>
 				</div>
 				<div class="content">
@@ -425,17 +682,17 @@ body {
 				<div class="clear"></div>
 			</div>
 			<div class="split"></div>
-			<div class="bad">
+			<!-- <div class="bad">
 				<div class="title">
 					<table>
-						<tr><td>不宜</td></tr>
+						<tr><td>今日不掉</td></tr>
 					</table>
 				</div>
 				<div class="content">
 					<ul></ul>
 				</div>
 				<div class="clear"></div>
-			</div>
+			</div> -->
 			<div class="split"></div>
 			<div class="line-tip">
 				<strong>座位朝向：</strong>面向<span class="direction_value"></span><span class="direction_action_value"></span>，捡紫装。
@@ -449,7 +706,7 @@ body {
 			
 			<div class="comment">
 				<ul>
-					<li>此页面代码非作者原创, 抄袭自程序员老黄历</li>
+					<li>此页面代码非作者原创, 参考自程序员老黄历</li>
 				</ul>
 			</div>
 		</div>
