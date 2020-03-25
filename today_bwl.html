@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>怀旧魔兽老黄历</title>
 		<script id="jquery_183" type="text/javascript" class="library" src="./js/jquery1.8.3.min.js"></script>
-		<script type="text/javascript" src="mc_drops.js"></script>
+		<script type="text/javascript" src="bwl_drops.js"></script>
 		<script type="text/javascript">
 			//
 
@@ -101,7 +101,7 @@ function pickTodaysLuck() {
 	var numGood = random(iday, 98) % 3 + 1;
 	var numBad = random(iday, 87) % 3 + 1;
 	var eventArr = pickRandomActivity(_activities, numGood + numBad);
-	var mc_bosses_drops = pickRandomItemsFromBosses(mc_drops)
+	var bwl_bosses_drops = pickRandomItemsFromBosses(bwl_drops)
 
 	
 	var specialSize = pickSpecials();
@@ -110,8 +110,8 @@ function pickTodaysLuck() {
 	// 	addToGood(eventArr[i]);
 	// }
 
-	for (let i = 0; i < mc_bosses_drops.length; i++) {
-		const boss_drops = mc_bosses_drops[i];
+	for (let i = 0; i < bwl_bosses_drops.length; i++) {
+		const boss_drops = bwl_bosses_drops[i];
 		addToDrops(boss_drops)
 	}
 	
