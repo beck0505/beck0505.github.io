@@ -1,6 +1,5 @@
-<style type="text/css">
 
-	body * {
+body * {
 	font-family:"Consolas","Microsoft Yahei", Arial, sans-serif;
 }
 
@@ -178,6 +177,10 @@ body {
 	color: #999;
 }
 
+.q2 {
+	color: #1eff00!important;
+}
+
 .q4 {
 	color: #a335ee!important;
 }
@@ -185,5 +188,3 @@ body {
 .q5 {
 	color: #ff8000!important;
 }
-
-	</style>
