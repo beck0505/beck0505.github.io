@@ -78,26 +78,29 @@ var onyxia_drops = [
     ]}
 ]
 
-
 function extract_boss(bosses) {
+    var boss_drops = []
     for (let i = 0; i < bosses.length; i++) {
         const boss = bosses[i];
-        boss_item_with_weight(boss);
+        boss_drops.push({"name": boss.boss, "items": boss_item_with_weight(boss)});
     }
+    return boss_drops
 }
 
 function boss_item_with_weight(boss) {
     var total_items = []
-    
+
     // 根据权重, 算出总共有多少数量, 并计算每个item在哪个区间
     for (let i = 0; i < boss.items.length; i++) {
         const item = boss.items[i];
         total_items = add_item_to_drop(total_items, item)
     }
     // 随机区间
+    var results = []
     for( let i = 0; i < boss.num_drops; i++) [
-        random_pick(total_items)
+        results.push(random_pick(total_items))
     ]
+    return results
 }
 
 function add_item_to_drop(arr, item) {
@@ -108,7 +111,11 @@ function add_item_to_drop(arr, item) {
 }
 
 function random_pick(arr) {
-    console.log(arr[Math.floor(Math.random() * arr.length)])
+    return arr[Math.floor(Math.random() * arr.length)]
 }
 
-extract_boss(onyxia_drops)
+function getTodayString() {
+    var today = new Date();
+    var weeks = ["日","一","二","三","四","五","六"];
+	return "今天是" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 星期" + weeks[today.getDay()];
+}
