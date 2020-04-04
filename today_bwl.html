@@ -76,11 +76,10 @@
 					</div>
 					<img src="./static/blackwing-lair-small.jpg" style="width: 100%;"/>
 					<div class="wow-boss-drops">
-						<ul>
+						<ul class="list-group list-group-flush">
 
 						</ul>
 					</div>
-					
 				</div>
 				<!-- content end here -->
 				
@@ -101,7 +100,7 @@
 		var drops = extract_boss(bwl_drops)
 		for (let i = 0; i < drops.length; i++) {
 			const boss = drops[i];
-			$('.wow-boss-drops ul').append('<li><div id=' + boss.name + ' class="wow-boss-name">' + boss.name + '</div></li>');
+			$('.wow-boss-drops ul').append('<li class="list-group-item wow-boss-container"><div id=' + boss.name + ' class="wow-boss-name">' + boss.name + '</div></li>');
 			for (let i = 0; i < boss.items.length; i++) {
 				const pick = boss.items[i];
 				$("#"+boss.name).append('<div class="wow-boss-items">' + pick.name + '</div></li>')

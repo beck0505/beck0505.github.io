@@ -423,10 +423,19 @@ a.article:hover {
 }
 
 .wow-boss-name {
-	font-size: 15pt;
-	color: #fff
+	font-size: 1.08rem;
+    line-height: 1.5;
+	color: #f8b700
 }
 
 .wow-boss-items {
 	font-size: 12pt;
+}
+
+.wow-boss-container:nth-child(odd) {
+	background: hsla(0,0%,100%,.04);
+}
+
+.wow-boss-container:nth-child(even) {
+	background: hsla(0,0%,0%,.09);
 }
