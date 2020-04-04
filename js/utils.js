@@ -113,9 +113,3 @@ function add_item_to_drop(arr, item) {
 function random_pick(arr) {
     return arr[Math.floor(Math.random() * arr.length)]
 }
-
-function getTodayString() {
-    var today = new Date();
-    var weeks = ["日","一","二","三","四","五","六"];
-	return "今天是" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 星期" + weeks[today.getDay()];
-}

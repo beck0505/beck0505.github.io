@@ -16,7 +16,6 @@
     	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
         <script type="text/javascript" src="./js/siderbar.js"></script>
-		<script type="text/javascript" src="./js/onyxia.js"></script>
         <script type="text/javascript" src="./js/bwl_drops.js"></script>
         <script type="text/javascript" src="./js/utils.js"></script>
 	</head>
@@ -96,16 +95,17 @@
     	var weeks = ["日","一","二","三","四","五","六"];
 		var today_str = "今天是" + today.getFullYear() + "年" + (today.getMonth() + 1) + "月" + today.getDate() + "日 星期" + weeks[today.getDay()]
 		$('.date').html(today_str);
-	});
 
-	var drops = extract_boss(bwl_drops)
-	for (let i = 0; i < drops.length; i++) {
-		const boss = drops[i];
-		$('.wow-boss-drops ul').append('<li><div id=' + boss.name + ' class="wow-boss-name">' + boss.name + '</div></li>');
-		for (let i = 0; i < boss.items.length; i++) {
-			const pick = boss.items[i];
-			$("#"+boss.name).append('<div class="wow-boss-items">' + pick.name + '</div></li>')
+		// today's drops
+		var drops = extract_boss(bwl_drops)
+		for (let i = 0; i < drops.length; i++) {
+			const boss = drops[i];
+			$('.wow-boss-drops ul').append('<li><div id=' + boss.name + ' class="wow-boss-name">' + boss.name + '</div></li>');
+			for (let i = 0; i < boss.items.length; i++) {
+				const pick = boss.items[i];
+				$("#"+boss.name).append('<div class="wow-boss-items">' + pick.name + '</div></li>')
+			}
 		}
-	}
+	});
 	</script>
 </html>
