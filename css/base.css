@@ -33,6 +33,8 @@ body {
 	font-size:15pt;
 	line-height: 30pt;
 	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	color: #fff
 }
 
